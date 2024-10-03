@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weboldal Minta</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div id="headerContent">
+            <img src="Kardos Zsófia.jpg" alt="Profilkép" id="profilePic">
+            <div>
+                <h1>Üdvözöllek az Oldalamon!</h1>
+                <nav>
+                    <ul>
+                        <li><a href="#about">Rólam</a></li>
+                        <li><a href="#work">Eddigi munkáim</a></li>
+						<li><a href="#quiz">Minikvíz</a></li> <!-- Új link a minikvízhez -->
+                        <li><a href="#contact">Kapcsolat</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section id="about">
+        <h2>Rólam</h2>
+        <p>A nevem Kardos Zsófia. Célom, hogy az általam megtervezett termékek könnyen használhatóak és környezetbarátok legyenek.</p>
+        <p>Mindemellett fontos számomra, hogy a termékeim formáikban, színeikben megmutassák a világban kibontakozni vágyó művészetet.</p>
+        <button id="moreInfoBtn">Bővebben</button>
+        <div id="moreInfo" style="display:none;">
+            <p>Már gyerekként nagyon szerettem kézműveskedni, DIY (Do it yourself) projektekbe kezdtem, nem volt olyan termék, amit
+				ne tudtam volna az otthon talált anyagokból elkészíteni. A terméktervező szakra tizenegyedikesként találtam rá és
+				teljesen beleszerettem. Felébresztette bennem azt az alkotóvágyat, amit kisgyermekként magaménak tudtam.
+				Önkifejezés, alkotás, művészet amit meg szeretnék osztani veletek!</p>
+		   <h3>Tanulmányaim</h3>
+            <ul>
+                <li>Szent István Katolikus Általános Iskola, Mezőkövesd 2012-2020</li>
+                <li>Fényi Gyula Jezsuita Gimnázium, Kollégium és Óvoda, Miskolc 2020-2024</li>
+                <li>Jelenleg a Budapesti Műszaki és Gazdaságtudományi Egyetemen tanulok ipari termék- és formatervező mérnök szakon</li>
+            </ul>
+            <h3>Nyelvvizsgák</h3>
+            <ul>
+                <li>Német B2 szintű nyelvvizsga (ÖSD Nyelviskola, 2023)</li>
+            </ul>
+			</ul>
+			   
+        </div>
+    </section>
+
+    <section id="work">
+        <h2>Eddigi munkáim</h2>
+        <ul>
+            <li>
+                <h3>Tervezett logók</h3>
+                <p>Az egyetemen logótervezést is tanultam. Itt láthatsz pár általam tervezett logót.</p>
+                <a href="Logók.png" target="_blank">Nézd meg a projektet</a>
+            </li>
+            <li>
+                <h3>Egyik műszaki rajzom</h3>
+                <p>Kapaszkodó tartó műszaki ábrázolása.</p>
+                <a href="461636728_3849675888614758_7413110237240798015_n.jpg" target="_blank">Nézd meg a projektet</a>
+            </li>
+        </ul>
+    </section>
+	<section id="quiz">
+    <h2>Minikvíz: Milyen termékeket szeretnél látni?</h2>
+	<h2>Fontosak az igényeid!</h2>
+    <form id="quizForm">
+        <h3>1. Milyen típusú terméket keresel?</h3>
+        <label for="product1">
+            <input type="radio" name="product" id="product1" value="Termék A">
+            Termék A - Bútorok
+        </label><br>
+
+        <label for="product2">
+            <input type="radio" name="product" id="product2" value="Termék B">
+            Termék B - Egyszerű konyhai gépek (pl: kávéfőző, vízforraló)
+        </label><br>
+
+        <label for="product3">
+            <input type="radio" name="product" id="product3" value="Termék C">
+            Termék C - Gyerekjátékok (pl: mászóka, hinta)
+        </label><br>
+
+        <h3>2. Milyen árfekvésben gondolkodsz?</h3>
+        <label for="price1">
+            <input type="radio" name="price" id="price1" value="5000 Ft alatt">
+            5000-20000 Ft között
+        </label><br>
+
+        <label for="price2">
+            <input type="radio" name="price" id="price2" value="5000-20000 Ft">
+            20000-40000 Ft között
+        </label><br>
+
+        <label for="price3">
+            <input type="radio" name="price" id="price3" value="20000 Ft felett">
+            40000 Ft felett
+        </label><br>
+
+        <h3>3. Milyen funkciókat keresel a termékben?</h3>
+        <label for="feature1">
+            <input type="checkbox" name="feature" id="feature1" value="Hordozhatóság">
+            Hordozhatóság
+        </label><br>
+
+        <label for="feature2">
+            <input type="checkbox" name="feature" id="feature2" value="Környezetbarát anyagok">
+            Multifunkcionalitás
+        </label><br>
+
+        <label for="feature3">
+            <input type="checkbox" name="feature" id="feature3" value="Innovatív dizájn">
+            Innovatív dizájn
+        </label><br>
+
+ <h3>3. Milyen anyagot preferálsz a leginkább?</h3>
+        <label for="feature1">
+            <input type="checkbox" name="feature" id="feature1" value="Hordozhatóság">
+            Fa
+        </label><br>
+
+        <label for="feature2">
+            <input type="checkbox" name="feature" id="feature2" value="Környezetbarát anyagok">
+            Műanyag
+        </label><br>
+
+        <label for="feature3">
+            <input type="checkbox" name="feature" id="feature3" value="Innovatív dizájn">
+            Fém
+        </label><br>
+        <button type="submit">Küldés</button>
+    </form>
+    <div id="quizResponse" style="display:none;"></div>
+</section>
+<div id="quizResponse" style="display:none;">
+    <p>Köszönöm, hogy kitöltésével segít nekem! </p>
+    <div id="quizAnswers"></div>
+</div>
+
+    <section id="contact">
+        <h2>Küldj nekem üzenetet!</h2>
+        <form id="contactForm">
+            <label for="name">Név:</label>
+            <input type="text" id="name" required>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" required>
+            <label for="message">Üzenet:</label>
+            <textarea id="message" required></textarea>
+            <button type="submit">Küldés</button>
+        </form>
+        <div id="formResponse" style="display:none;"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Minden jog fenntartva.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

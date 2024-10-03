@@ -1,0 +1,255 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f0e130, #ff0e0e);
+}
+
+header {
+    background: #FFFACD; /* Halvány citromsárga szín */
+    color: black; /* Fekete szöveg */
+    padding: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#headerContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#profilePic {
+    width: 80px;
+    height: auto;
+    border-radius: 50%;
+    margin-right: 20px;
+    border: 3px solid #FFD700; /* Arany keret a profilkép körül */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: black; /* Fekete szöveg a linkekhez */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #FF4500; /* Hover szín */
+    text-shadow: 0 0 5px #FF4500; /* Fényhatás hoverkor */
+}
+
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s forwards;
+    border-left: 5px solid #FFFACD; /* Halvány citromsárga sáv bal oldalon */
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #FFFACD; /* Halvány citromsárga szín */
+    color: black; /* Fekete szöveg */
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+button {
+    background-color: #28A745; /* Zöld szín */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #218838; /* Sötétebb zöld hover */
+}
+
+h1 {
+    overflow: hidden; /* Rejtse el a szöveget */
+    white-space: nowrap; /* Ne wrapoljon */
+    border-right: 3px solid black; /* Cursor hatás */
+    animation: typing 3s steps(30, end), blink 0.75s step-end infinite; /* Írás és villogás */
+    font-family: 'Courier New', Courier, monospace; /* Monospace betűtípus */
+}
+
+h2 {
+    color: #FF5733; /* Narancssárga szín a h2 címekhez */
+    text-shadow: 1px 1px 2px #fff; /* Fényhatás */
+}
+
+h3 {
+    color: #FF1493; /* Rózsaszín szín a h3 címekhez */
+}
+
+ul li {
+    padding: 10px 0; /* Listaelemek közötti tér */
+    transition: background-color 0.3s;
+}
+
+ul li:hover {
+    background-color: rgba(255, 0, 0, 0.1); /* Listaelemek hover színe */
+    border-left: 5px solid #007BFF; /* Bal oldali sáv hover */
+}
+
+/* Animáció definíció */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+#quiz {
+    background: #FFF; /* Fehér háttér */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+h2 {
+    color: #FF5733; /* Narancssárga szín a h2 címekhez */
+}
+
+button {
+    background-color: #007BFF; /* Kék szín */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3; /* Sötétebb kék hover */
+}
+.section {
+    opacity: 0; /* Kezdetben láthatatlan */
+    transform: translateX(100%); /* Jobbról érkezik */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Átmeneti hatás */
+}
+
+.section.visible {
+    opacity: 1; /* Láthatóvá válik */
+    transform: translateX(0); /* Normál helyzet */
+}
+
+.section-left {
+    transform: translateX(-100%); /* Balról érkezik */
+}
+/* Alapértelmezett stílusok mobil nézethez */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #f2e6b1; /* Halvány citromsárga */
+    padding: 20px;
+    text-align: center;
+}
+
+#headerContent {
+    display: flex;
+    flex-direction: column; /* Mobilon vertikálisan */
+    align-items: center;
+}
+
+#profilePic {
+    width: 80px; /* Kép mérete */
+    border-radius: 50%; /* Kerek kép */
+    margin-bottom: 10px; /* Térköz a kép és a szöveg között */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 10px;
+}
+
+/* Szekciók stílusai */
+.section {
+    opacity: 0; /* Kezdetben láthatatlan */
+    transform: translateX(100%); /* Jobbról érkezik */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Átmeneti hatás */
+    padding: 20px;
+    margin: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.section.visible {
+    opacity: 1; /* Láthatóvá válik */
+    transform: translateX(0); /* Normál helyzet */
+}
+
+.section-left {
+    transform: translateX(-100%); /* Balról érkezik */
+}
+
+/* Nagyobb képernyőkhöz */
+@media (min-width: 600px) {
+    #headerContent {
+        flex-direction: row; /* Nagyobb képernyőkön vízszintes */
+        justify-content: flex-start;
+    }
+
+    #profilePic {
+        margin-right: 20px; /* Térköz a kép és a szöveg között */
+    }
+
+    nav li {
+        margin: 0 15px;
+    }
+
+    .section {
+        margin: 40px; /* Nagyobb margó nagyobb képernyőkön */
+    }
+}
+
+@media (min-width: 900px) {
+    #headerContent {
+        justify-content: center; /* Középre igazítás */
+    }
+
+    .section {
+        max-width: 800px; /* Max szélesség a szekcióknak */
+        margin: 40px auto; /* Középre igazítás */
+    }
+}
